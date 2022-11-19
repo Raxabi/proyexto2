@@ -1,0 +1,77 @@
+/* Margen a main-wrapper */
+#main-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* titulo principal pagina */
+#main-title {
+    text-align: center;
+}
+
+/* Estilos para la lista en general */
+#navbar {
+    margin-top: 20px;
+}
+
+/* Clase para anchors */
+.redireccionable-element {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.redireccionable-element:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-decoration-color: green;
+}
+
+/* Lista */
+#navbar > ul {
+    width: max-content;
+    margin: auto;
+    padding: 0;
+}
+
+/* Cada elemento de lista */
+#navbar > ul > li {
+    display: inline-block;
+    padding: 5px;
+}
+
+/* Todos los elementos de lista */
+#navbar > ul > li + li {
+    margin-left: 50px;
+}
+
+#shopping-list-element {
+    position: absolute;
+}
+
+#shopping-bag {
+    color: black;
+}
+
+#counter-products-container {
+    position: relative;
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    bottom: 15px;
+    left: 15px;
+}
+
+#counter {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    left: 5px;
+    bottom: 3px;
+}
+
+/* Estilizando main */
