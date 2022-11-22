@@ -1,11 +1,15 @@
+body {
+    width: max-content;
+    margin: auto;
+}
+
 /* Margen a main-wrapper */
 #main-wrapper {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 /* titulo principal pagina */
-#main-title {
+#main-body-title {
     text-align: center;
 }
 
@@ -47,8 +51,20 @@
     margin-left: 50px;
 }
 
-#shopping-list-element {
-    position: absolute;
+#navbar > ul > li:last-child {
+    position: relative;
+    height: 35px;
+    top: 25px;
+}
+
+#navbar > ul > li:last-child > a {
+    display: inline-block;
+    text-decoration: none;
+    height: 35px;
+}
+
+#house-return {
+    color: black;
 }
 
 #shopping-bag {
@@ -59,8 +75,8 @@
     position: relative;
     background-color: red;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     bottom: 15px;
     left: 15px;
 }
@@ -68,10 +84,36 @@
 #counter {
     position: relative;
     color: white;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: bolder;
-    left: 5px;
-    bottom: 3px;
+    left: 7px;
+    top: 2px;
 }
 
-/* Estilizando main */
+#border {
+    width: max-content;
+    height: 3px;
+    color: grey;
+}
+
+footer {
+    color: white;
+}
+
+@media only screen and (max-width: 1366px) {
+    .redireccionable-element {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .redireccionable-element {
+        font-size: 14px;
+        font-weight: 540;
+    }
+
+    #navbar > ul > li + li {
+        margin-left: 40px;
+    }
+}

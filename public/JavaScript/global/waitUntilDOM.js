@@ -1,4 +1,4 @@
-import { get } from "./index.js"
+import { get } from "./api/globalFuncs.js"
 
 const loader = get("loader");
 const mainWrapper = get("main-wrapper");
