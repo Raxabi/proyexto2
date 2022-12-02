@@ -144,7 +144,7 @@ body {
 }
 
 .product {
-    width: 280px;
+    width: 290px;
     height: 370px;
     padding: 40px;
     transition: transform .2s;
@@ -308,6 +308,6 @@ footer > #footer-content > nav > ul > li > i {
     }
 
     #cannabis-mate {
-        width: 230px;
+        width: 240px;
     }
 }
