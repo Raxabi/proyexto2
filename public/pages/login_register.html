@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/global/entrypoint.css">
     <link rel="stylesheet" href="../CSS/global/index.css">
+    <link rel="stylesheet" href="../CSS/login.css">
     <link rel="stylesheet" href="../../external/icons/css/line-awesome.min.css">
     <link rel="stylesheet" href="../../external/toruskit.blobz/blobz.min.css">
     <title>Inflow - Las infusiones que te hacen fluir</title>
@@ -56,7 +57,19 @@
             </nav>
         </header>
         <main>
-            
+            <div class="login-box">
+                <form action="/saveUser">
+                    <!-- USERNAME INPUT -->
+                    <label for="username">Nombre de usuario</label>
+                    <input type="text" placeholder="Introduce tu nombre de usuario">
+                    <!-- PASSWORD INPUT -->
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Introduce tu contraseña">
+                    <button type="submit"><span>Registrar</span></button><br/>
+                    <a href="#">¿Has olvidado la contraseña?</a><br>
+                    <a href="#">¿No tienes una cuenta?</a>
+                </form>
+            </div>
         </main>
         <footer>
             <div id="footer-content">

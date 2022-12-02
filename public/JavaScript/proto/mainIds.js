@@ -1,4 +1,7 @@
 import { get } from "../global/api/globalFuncs.js"
 
-export const counter = get("counter");
-export const manzanillina = get("manzanilla-button");
+export const loader = get("loader")
+export const mainWrapper = get("main-wrapper")
+export const counter = get("counter")
+export const navbar = get("navbar")
+export const productsToShopContainer = get("actual-products-container")

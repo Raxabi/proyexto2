@@ -6,8 +6,32 @@ body {
 /* Margen a main-wrapper */
 #main-wrapper {
     margin-top: 20px;
-    margin-bottom: 20px;
 }
+
+#fblob {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 4%;
+    left: 92%;
+    margin-top: -50px;
+    margin-left: -50px;
+    z-index: -1;
+    filter: blur(1rem);
+}
+
+#sblob {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 80%;
+    left: -1%;
+    margin-top: -50px;
+    margin-left: -50px;
+    z-index: -1;
+    filter: blur(1rem);
+}
+
 /* titulo principal pagina */
 #main-body-title {
     text-align: center;
@@ -16,6 +40,7 @@ body {
 /* Estilos para la lista en general */
 #navbar {
     margin-top: 20px;
+    z-index: 1;
 }
 
 /* Clase para anchors */
@@ -51,23 +76,29 @@ body {
     margin-left: 50px;
 }
 
-#navbar > ul > li:last-child {
+#navbar > ul > #shopping-list-element {
     position: relative;
     height: 35px;
     top: 25px;
 }
 
-#navbar > ul > li:last-child > a {
+#navbar > ul > #shopping-list-element > a {
     display: inline-block;
     text-decoration: none;
     height: 35px;
 }
 
-#house-return {
-    color: black;
+#register-list-element {
+    position: relative;
+    top: 7px;
 }
 
-#shopping-bag {
+#house-return {
+    position: relative;
+    top: 5px;
+}
+
+.icon {
     color: black;
 }
 
@@ -96,15 +127,142 @@ body {
     color: grey;
 }
 
-footer {
+/* Estilos de productos */
+
+#main-index-title {
+    margin-top: 30px;
+}
+
+#recommended-products {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: grid;
+    column-gap: 15rem;
+    grid-template-columns: auto auto auto;
+    width: max-content;
+}
+
+.product {
+    width: 280px;
+    height: 370px;
+    padding: 40px;
+    transition: transform .2s;
+}
+
+.product:hover {
+    outline: solid 5px green;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+.internal-product-content {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    margin: auto;
+}
+
+.internal-product-content > img {
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 210px;
+    filter: grayscale(50%);
+}
+
+.internal-product-content > img:nth-child(3) {
+    height: 1000px;
+}
+
+.product:hover > .internal-product-content > img {
+    filter: grayscale(0%);
+}
+
+.product-info {
+    position: relative;
+    top: 15%;
+}
+
+.product-title {
+    width: max-content;
+    height: 5%;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    font-weight: bolder;
+    font-size: 18px;
+    top: 50%;
+    text-align: left;
+}
+
+.product-price-button {
+    display: block;
+    width: max-content;
+    margin-top: 5%;
+    margin-right: auto;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #28a745;
+    padding: 10px;
+    border-radius: 10px;
     color: white;
+}
+
+.product-price-button:hover {
+    background-color: #208036;
+}
+
+footer {
+    padding: 50px;
+    margin: auto;
+    width: max-content;
+}
+
+footer > #footer-content > h3 {
+    color: black;
+    text-decoration: underline;
+}
+
+footer > #footer-content > nav > ul {
+    list-style-type: square;
+    color: black;
+    margin-left: 50px;
+    width: max-content;
+}
+
+footer > #footer-content > nav > ul > li > a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer > #footer-content > nav > ul > li > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+footer > #footer-content > nav > ul > li > i {
+    position: relative;
+    margin-left: 10px;
+    top: 5px;
+}
+
+#author {
+    width: auto;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#author > a {
+    color: #0066cc;
 }
 
 @media only screen and (max-width: 1366px) {
     .redireccionable-element {
-        text-decoration: none;
-        color: black;
-        padding: 5px;
         font-size: 15px;
     }
 
@@ -115,5 +273,41 @@ footer {
 
     #navbar > ul > li + li {
         margin-left: 40px;
+    }
+
+    #fblob {
+        top: 70%;
+        left: -1%;
+    }
+    
+    #sblob {
+        top: 1%;
+        left: 89%;
+    }
+
+    #recommended-products {
+        column-gap: 5rem;
+    }
+
+    .product {
+        width: 210px;
+        height: 230px;
+    }
+
+    .internal-product-content > img {
+        height: 90px;
+        width: 100px;
+    }
+
+    .icon {
+        font-size: 28px;
+    }
+
+    .product-price-button {
+        font-size: 20px;
+    }
+
+    #cannabis-mate {
+        width: 230px;
     }
 }

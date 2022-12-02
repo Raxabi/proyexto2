@@ -1,7 +1,4 @@
-import { get } from "./api/globalFuncs.js"
-
-const loader = get("loader");
-const mainWrapper = get("main-wrapper");
+import { loader, mainWrapper } from "../proto/mainIds.js"
 
 document.addEventListener("DOMContentLoaded", () => {
     $(loader).fadeOut(2000, () => {

@@ -1,0 +1,11 @@
+#disclaimer {
+    position: absolute;
+    width: 500px;
+    right: 73.9%;
+}
+
+#disclaimer > p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.3;
+}

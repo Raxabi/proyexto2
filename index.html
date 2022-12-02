@@ -22,30 +22,37 @@
         <header>
             <nav id="navbar">
                 <ul>
-                    <li>
-                        <a id="house-return" href="/"><i class="las la-home la-2x icon"></i></a>
+                    <li id="house-return">
+                        <a href="./index.html">
+                            <i class="las la-home la-2x icon"></i>
+                        </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="redireccionable-element" href="./public/pages/infusiones.html">Infusiones 🧉</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="redireccionable-element" href="./public/pages/especiales.html">Infusiones de la locura 🍁</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="redireccionable-element" href="./public/pages/especialidades-de-la-casa.html">Especialidades de la casa 🏪</a>
                     </li>
                     <li>
-                        <a class="redireccionable-element" href="./public/pages/especias.html">Especias por aparte 🌿</a>
+                        <a class="redireccionable-element" href="./public/pages/especias.html">Especias por aparte 🌿</a> -->
                     </li>
                     <li>
                         <a class="redireccionable-element" href="./public/pages/acerca.html">Acerca de nosotros 📮</a>
                     </li>
-                    <li>
+                    <li id="shopping-list-element">
                         <a href="./public/pages/shopping.html">
                             <i id="shopping-bag" class="las la-shopping-bag la-2x icon"></i>
                             <div id="counter-products-container">
                                 <span id="counter">0</span>
                             </div>
+                        </a>
+                    </li>
+                    <li id="register-list-element">
+                        <a href="./public/pages/login_register.html">
+                            <i class="las la-user-circle la-2x icon"></i>
                         </a>
                     </li>
                 </ul>
@@ -56,13 +63,14 @@
             <div id="recommended-products">
                 <div class="product">
                     <div class="internal-product-content">
+                        <img src="./public/images/MANZANILLABIO.jpg" alt="manzanilla, infusion, infusion de manzanilla">
                         <div class="product-info">
                             <span class="product-title">
-                                Infusion sabor a<br/>manzanilla
+                                Infusion sabor a manzanilla
                             </span>
-                            <button id="manzanilla-button" class="product-price-button">
+                            <button name=" Té de Manzanilla" class="product-price-button">
                                 Comprar por<br/>3.99€
-                            </button=>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -73,7 +81,7 @@
                             <span class="product-title">
                                 Sabor té de frambuesas
                             </span>
-                            <button class="product-price-button">
+                            <button name="Té de Frambuesa" class="product-price-button">
                                 Comprar por<br/>3.99€
                             </button>
                         </div>
@@ -86,7 +94,7 @@
                             <span class="product-title">
                                 Sabor té de pera
                             </span>
-                            <button onclick="" class="product-price-button">
+                            <button name="Té de Pera" class="product-price-button">
                                 Comprar por<br/>3.99€
                             </button>
                         </div>
@@ -95,22 +103,32 @@
             </div>
         </main>
         <footer>
-            <span id="border"></span>
-            <nav>
-                <h4>Redes Sociales</h4>
-                <ul>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                </ul>
-            </nav>
+            <div id="footer-content">
+                <h3>Encuentranos en nuestras redes sociales</h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <i class="lab la-github la-2x"></i>
+                            <a target="_blank" href="https://github.com/Raxabi">
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <i class="lab la-twitter la-2x"></i>
+                            <a target="_blank" href="https://twitter.com/HalleySoftware">
+                                Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </footer>
+        <h1 id="author">
+            Programmed, designed and wrote by the HalleySoftware founder - Raxabi<br/>
+            <a href="mailto: openhalleysoftware@gmail.com">
+                &lt;openhalleysoftware@gmail.com&gt;
+            </a>
+        </h1>
         <div id="fblob" class="tk-blob" style="--fill: #28a745; --amount: 1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 317.5 353.7">
               <path d="M291.8 55.3c30.4 39.9 30.7 102 17 160.4-13.8 58.3-41.6 112.9-84 130.9s-99.3-.6-137-30C50.2 287.1 32 246.9 17 200.5 2.1 154.1-9.6 101.4 11.5 63.6 32.6 25.8 86.6 2.8 143.8.2c57.2-2.6 117.6 15.2 148 55.1z"></path>

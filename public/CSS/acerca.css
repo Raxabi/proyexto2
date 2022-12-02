@@ -1,0 +1,19 @@
+main {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: max-content;
+}
+
+main > p {
+    margin-top: 50px;
+    font-size: 19px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+}

@@ -1,0 +1,51 @@
+#actual-products-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-height: 600px;
+    width: max-content;
+    overflow-y: scroll;
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+/* Heredado de tarjetas de products en index.css */
+.shopping-product {
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    padding: 40px;
+    transition: transform .2s;
+    border: 2px green solid;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.shopping-product:last-child {
+    margin-bottom: 50px;
+}
+
+.shopping-product > h1 {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.shopping-product > button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(255, 117, 117);
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.shopping-product > button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 80, 80);
+}
